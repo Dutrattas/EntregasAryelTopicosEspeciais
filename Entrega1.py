@@ -15,7 +15,6 @@ class Atributos:
         return '\n'.join([f"{chave}: {valor}" for chave, valor in self.valores.items()])
 
     def distribuir(self, lista_valores):
-        """Usado apenas para estilo Heróico"""
         if len(lista_valores) != 6:
             raise ValueError("São necessários exatamente 6 valores.")
         for i, chave in enumerate(self.valores):
@@ -89,3 +88,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
